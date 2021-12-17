@@ -28,12 +28,16 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 sudo apt install texlive-full pandoc -y
 ```
 
-## Befehl zum Rendern des PDFs
+## Befehl zum Rendern des PDFs - siehe auch convert.sh
 
 <!-- wird nicht automatisch umgebrochen -->
 ```bash
  pandoc README.md  --number-sections --pdf-engine=lualatex -V papersize=a4paper -V geometry:margin=3cm -V lang=de-DE -V breakurl -V hyphens=URL -V colorlinks   --highlight-style tango -o output.pdf
 ```
+
+## E-Book
+
+* [kofler.info](https://kofler.info/free-ebooks/pandoc2.pdf)
 
 ## Aufzählung
 1. Eins
@@ -60,6 +64,25 @@ sudo apt install texlive-full pandoc -y
 | dolor | sit |
 | amet | ```code``` |
 | consectetur | adipiscing |
+
+
+## Größere Tabelle
+
+| Lorem | _ipsum_ | 3. Spalte |
+| -- | -- | -- |
+| dolor | sit | lalala |
+| dolor | sit | lalala |
+| dolor | sit | lalala |
+| amet | ```code``` | lalila |
+| consectetur | adipiscing | keine Idee mehr, aber ganz ganz ganz ganz ganz viel text |
+| dolor | sit | lalala |
+| amet | ```code``` | lalila |
+| consectetur | adipiscing | keine Idee mehr |
+| amet | ```code``` | lalila |
+| consectetur | adipiscing | keine Idee mehr |
+| amet | ```code``` | lalila |
+| consectetur | adipiscing | keine Idee mehr |
+
 
 ## Kursiv/Fett
 
@@ -113,7 +136,19 @@ Jetzt kommt ein Seitenumbruch:
 [^3]: Fußnote mit [Link](https://git.mgrote.net/mg/mirror-munin-contrib/raw/branch/master/images/t-shirts/logo-horizontal-tshirt-black-modified.svg)
 
 
-# Überschrift 1
+# Überschrift 1 - Text Hoch/tiefgestellt und Formeln
+
+a=b*c
+
+a^2^=b
+
+H~2~O
+
+I^2^S
+
+E=m*c^2^
+
+$c = \sqrt{a^2 + b^2}$
 
 Lorem ipsum dolor sit amet, consetetur __sadipscing__ elitr
 
@@ -129,11 +164,22 @@ Lorem ipsum dolor sit amet, consetetur __sadipscing__ elitr
 
 Lorem ipsum dolor sit amet, consetetur __sadipscing__ elitr
 
-##### Überschrift 5
+##### Überschrift 5 - fett und kursiv
 
-Lorem ipsum dolor sit amet, consetetur __sadipscing__ elitr
+Lorem ***ipsum*** dolor sit amet, consetetur __sadipscing__ elitr
 
+## Glossar
 
+MTA
+:    Text kommt hier,
+     Lorem ipsum dolor sit amet, consetetur __sadipscing__ elitr
+
+testelement
+:    Noch mehr *Text*, hallowelt
+     Noch mehr Text, hallowelt
+     Noch mehr Text, hallowelt
+     Noch mehr Text, hallowelt
+     Noch mehr Text, hallowelt
 
 <!-- Abbildungsverzeichnis -->
 

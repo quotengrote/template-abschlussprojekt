@@ -3,14 +3,16 @@
 function convert {
   pandoc "$1"  --number-sections \
     --pdf-engine=lualatex  \
-    -V papersize=a4paper  \
+    -V papersize=a4  \
     -V geometry:margin=3cm  \
     -V lang=de-DE  \
+    -f markdown+smart \
+    --toc-depth=3 \
     -V breakurl  \
     -V hyphens=URL  \
-    -V colorlinks \
     --highlight-style tango \
-    -o output.pdf
+    -H header.tex \
+    -o output.pdf 
 }
 
 case "$1" in
