@@ -141,6 +141,3 @@ Lorem ipsum dolor sit amet, consetetur __sadipscing__ elitr
 
 \pagebreak
 \listoffigures
-
-\pagebreak
-\listoftables
