@@ -71,11 +71,13 @@ Dieser _hier_ ist kursiv.
 ## Code in Aufzählung
 
 1. Abschnitt
+
     ```javascript
     // This code chunk is indented by two tabs (four spaces)
     var x = 3
     print("Pandoc has made a mess out of Markdown!")
     ```
+    
 2. Abschnitt
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
