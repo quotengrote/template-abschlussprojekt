@@ -21,7 +21,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 ![Lokal eingebundenes Bild mit fester Breite](img/a.jpg){ width=50% }
 
 ## ToDo
-- [ ] .gitignore
+- [x] .gitignore
 
 ## Installation
 
