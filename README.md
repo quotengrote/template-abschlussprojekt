@@ -1,4 +1,3 @@
-<!-- Titelseite -->
 % Auto
 % Titel
 % Datum
@@ -77,7 +76,7 @@ Dieser _hier_ ist kursiv.
     var x = 3
     print("Pandoc has made a mess out of Markdown!")
     ```
-    
+
 2. Abschnitt
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
@@ -94,7 +93,6 @@ gets
 
 - [Titel](https://vijual.de/wp-content/uploads/2019/03/Artikel_schreiben_mit_Markdown_0.1.5.pdf)
 - https://vijual.de/wp-content/uploads/2019/03/Artikel_schreiben_mit_Markdown_0.1.5.pdf
-- [Ein Link auf eine andere Überschrift](#Code-in-Aufzählung)
 
 
 
