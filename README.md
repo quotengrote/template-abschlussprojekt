@@ -1,4 +1,4 @@
-% Auto
+% Autor
 % Titel
 % Datum
 
@@ -149,3 +149,9 @@ Lorem ipsum dolor sit amet, consetetur __sadipscing__ elitr
 
 \pagebreak
 \listoffigures
+
+\pagebreak
+\lstlistoflistings
+
+\pagebreak
+\listoftables
