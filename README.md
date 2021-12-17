@@ -80,13 +80,15 @@ Dieser _hier_ ist kursiv.
 2. Abschnitt
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-## Codeblock mit Beschreibung
+## Codeblock fur das Listing am Ende + Beschreibung
 
-```{caption="This is a caption" .Ruby}
-# Gibt Hallo Welt! aus und wartet auf die Eingabe des Benutzers
-puts "Hallo Welt!"
-gets
-```
+
+\begin{lstlisting}[caption={Beschreibung}]
+    # Gibt Hallo Welt! aus und wartet auf die Eingabe des Benutzers
+    puts "Hallo Welt!"
+    gets
+\end{lstlisting}
+
 
 
 # Links
