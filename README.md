@@ -2,10 +2,6 @@
 % Titel
 % Datum
 
-\usepackage{caption}
-\DeclareCaptionType{code}[Code Listing][List of Code Listings]
-\begin{document}
-
 <!-- verstecke Seitenzahlen bis pagebreak -->
 \pagenumbering{gobble}
 \pagebreak
