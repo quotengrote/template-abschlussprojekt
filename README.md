@@ -2,6 +2,10 @@
 % Titel
 % Datum
 
+\usepackage{caption}
+\DeclareCaptionType{code}[Code Listing][List of Code Listings]
+\begin{document}
+
 <!-- verstecke Seitenzahlen bis pagebreak -->
 \pagenumbering{gobble}
 \pagebreak
@@ -82,12 +86,14 @@ Dieser _hier_ ist kursiv.
 
 ## Codeblock fur das Listing am Ende + Beschreibung
 
-
-\begin{lstlisting}[caption={Beschreibung}]
+\begin{code}
+\begin{lstlisting}
     # Gibt Hallo Welt! aus und wartet auf die Eingabe des Benutzers
     puts "Hallo Welt!"
     gets
 \end{lstlisting}
+\caption[Beschreibung]{caption}
+\end{code}
 
 
 
@@ -153,7 +159,7 @@ Lorem ipsum dolor sit amet, consetetur __sadipscing__ elitr
 \listoffigures
 
 \pagebreak
-\lstlistoflistings
+\listofcodes
 
 \pagebreak
 \listoftables
