@@ -31,15 +31,16 @@ sudo apt install texlive-full pandoc -y
 
 ## Befehl zum Rendern des PDFs
 
+<!-- wird nicht automatisch umgebrochen -->
 ```bash
- pandoc <input-datei.md>  --number-sections --pdf-engine=lualatex -V papersize=a4paper -V geometry:margin=3cm -V lang=de-DE -V breakurl -V hyphens=URL -V colorlinks   --highlight-style tango -o <outout-datei.pdf>
+ pandoc README.md  --number-sections --pdf-engine=lualatex -V papersize=a4paper -V geometry:margin=3cm -V lang=de-DE -V breakurl -V hyphens=URL -V colorlinks   --highlight-style tango -o output.pdf
 ```
 
 ## Aufzählung
 1. Eins
 2. Zwei
-  2.1 Test
-  2.3 Test 2
+    1. Test
+    2. Test 2
 4. Drei
 5. Vier
 7. Fünf
