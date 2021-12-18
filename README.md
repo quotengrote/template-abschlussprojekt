@@ -10,17 +10,7 @@
 \pagebreak
 \pagenumbering{arabic}
 
-
-# Überschrift
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-![Lokal eingebundenes Bild mit fester Breite](img/a.jpg){ width=50% }
-
-## ToDo
-- [x] .gitignore
+# Dieses Repository enthalt ein Template für Facharbeiten/Projekte umgesetzt mit pandoc
 
 ## Installation
 
@@ -28,12 +18,21 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 sudo apt install texlive-full pandoc -y
 ```
 
-## Befehl zum Rendern des PDFs - siehe auch convert.sh
+## Befehl zum Rendern des PDFs
 
 <!-- wird nicht automatisch umgebrochen -->
 ```bash
- pandoc README.md  --number-sections --pdf-engine=lualatex -V papersize=a4paper -V geometry:margin=3cm -V lang=de-DE -V breakurl -V hyphens=URL -V colorlinks   --highlight-style tango -o output.pdf
+convert.sh <Datei_zum Rendern.md>
 ```
+
+
+# Beispiele Markdown
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+![Lokal eingebundenes Bild mit fester Breite](img/a.jpg){ width=50% }
 
 ## E-Book
 
