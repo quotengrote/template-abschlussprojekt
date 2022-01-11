@@ -50,7 +50,7 @@ function convert {
 \renewcommand*{\arraystretch}{1.25}
 
 EOF
-
+  echo "MD --> Latex"
   pandoc "$1"  --number-sections \
     --pdf-engine=lualatex  \
     -V papersize=a4  \
@@ -65,6 +65,7 @@ EOF
     -o tmp.tex \
     --to latex
 
+  echo "sed"
   # https://kofler.info/free-ebooks/pandoc2.pdf S. 145
   sed -e 's,\@{},,g' \
    -e 's,\\toprule,\\hline,' \
@@ -73,6 +74,7 @@ EOF
    -e '/\\endfirsthead/,/\\endhead/d' \
    < tmp.tex > tst.tex
 
+  echo "Latex --> PDF"
   pdflatex tst.tex -o tst.pdf
 
 
