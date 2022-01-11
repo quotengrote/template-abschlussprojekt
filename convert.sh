@@ -66,12 +66,12 @@ EOF
     -- to latex
 
   # https://kofler.info/free-ebooks/pandoc2.pdf S. 145
-  sed -e 's ,\ @ {} , ,g ' \
-      -e 's ,\\ toprule ,\\ hline , ' \
-      -e 's ,\\ bottomrule ,\\ hline , ' \
-      -e 's ,\\ midrule ,\\ hline , ' \
-      -e '/\\ e n d f i r s t head/ ,/\\ endhead /d ' \
-    < tmp.tex > tst.tex
+  sed -e 's,\@{},,g' \
+   -e 's,\\toprule,\\hline,' \
+   -e 's,\\bottomrule,\\hline,' \
+   -e 's,\\midrule,\\hline,' \
+   -e '/\\endfirsthead/,/\\endhead/d' \
+   < tmp.tex > tst.tex
 
   pdflatex tst.tex -o tst.pdf
 
