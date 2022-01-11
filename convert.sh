@@ -42,8 +42,8 @@ function convert {
   {\endoldlongtable}
 
 % Farbe und Breite der Tabellenlinien
-\usepackage{colortbl}         
-\arrayrulecolor{black}%              
+\usepackage{colortbl}
+\arrayrulecolor{black}%
 \setlength\arrayrulewidth{1pt}% wirkt für /hline, nicht für /toprule etc.
 
 % Tabellenzeilen etwas großzügiger dimensionieren
@@ -62,9 +62,21 @@ EOF
     -V hyphens=URL  \
     --highlight-style tango \
     -H ./header.tex \
-    -o output.pdf
+    -o tmp.tex \
+    -- to latex
 
-  rm header.tex
+  # https://kofler.info/free-ebooks/pandoc2.pdf S. 145
+  sed -e 's ,\ @ {} , ,g ' \
+      -e 's ,\\ toprule ,\\ hline , ' \
+      -e 's ,\\ bottomrule ,\\ hline , ' \
+      -e 's ,\\ midrule ,\\ hline , ' \
+      -e '/\\ e n d f i r s t head/ ,/\\ endhead /d ' \
+    < tmp.tex > tst.tex
+
+  pdflatex tst.tex -o tst.pdf
+
+
+  rm header.tex tst.tex
 }
 
 case "$1" in
