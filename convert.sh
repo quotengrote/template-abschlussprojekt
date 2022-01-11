@@ -63,7 +63,7 @@ EOF
     --highlight-style tango \
     -H ./header.tex \
     -o tmp.tex \
-    -- to latex
+    --to latex
 
   # https://kofler.info/free-ebooks/pandoc2.pdf S. 145
   sed -e 's,\@{},,g' \
