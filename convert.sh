@@ -74,10 +74,10 @@ EOF
    < tmp.tex > tst.tex
 
   echo "Latex --> PDF"
-  pdflatex tst.tex -o tst.pdf
+  pdflatex tst.tex -o output.pdf
 
 
-  rm header.tex tst.tex
+  rm header.tex
 }
 
 case "$1" in
