@@ -14,7 +14,6 @@ function convert {
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}    % Trennungen nach neuer deutscher Rechtschreibung
 \usepackage{calc}              % einfache Arithmetik in latex
 \usepackage{longtable}         % Pandoc-Tabellen
 \usepackage[normalem]{ulem}    % für \sout (strike out)
