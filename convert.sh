@@ -74,7 +74,7 @@ EOF
    < tmp.tex > tst.tex
 
   echo "Latex --> PDF"
-  pdflatex tst.tex -o output.pdf
+  pdflatex -jobname "$1" tst.tex 
 
 
   rm header.tex

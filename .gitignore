@@ -1,7 +1,8 @@
-output.pdf
-tmp.tex
-tst.aux
-tst.lof
-tst.out
-tst.toc
-tst.log
+*.pdf
+*.tex
+*.tex
+*.aux
+*.lof
+*.out
+*.toc
+*.log
