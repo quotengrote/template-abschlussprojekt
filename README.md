@@ -58,29 +58,29 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 ## Tabelle
 
-| Lorem | _ipsum_ |
-| -- | -- |
-| dolor | sit |
-| amet | ```code``` |
+| Lorem       | _ipsum_    |
+| --          | --         |
+| dolor       | sit        |
+| amet        | ```code``` |
 | consectetur | adipiscing |
 
 
 ## Größere Tabelle
 
-| Lorem | _ipsum_ | 3. Spalte |
-| -- | -- | -- |
-| dolor | sit | lalala |
-| dolor | sit | lalala |
-| dolor | sit | lalala |
-| amet | ```code``` | lalila |
+| Lorem       | _ipsum_    | 3. Spalte                                                |
+| --          | --         | --                                                       |
+| dolor       | sit        | lalala                                                   |
+| dolor       | sit        | lalala                                                   |
+| dolor       | sit        | lalala                                                   |
+| amet        | ```code``` | lalila                                                   |
 | consectetur | adipiscing | keine Idee mehr, aber ganz ganz ganz ganz ganz viel text |
-| dolor | sit | lalala |
-| amet | ```code``` | lalila |
-| consectetur | adipiscing | keine Idee mehr |
-| amet | ```code``` | lalila |
-| consectetur | adipiscing | keine Idee mehr |
-| amet | ```code``` | lalila |
-| consectetur | adipiscing | keine Idee mehr |
+| dolor       | sit        | lalala                                                   |
+| amet        | ```code``` | lalila                                                   |
+| consectetur | adipiscing | keine Idee mehr                                          |
+| amet        | ```code``` | lalila                                                   |
+| consectetur | adipiscing | keine Idee mehr                                          |
+| amet        | ```code``` | lalila                                                   |
+| consectetur | adipiscing | keine Idee mehr                                          |
 
 
 ## Kursiv/Fett
