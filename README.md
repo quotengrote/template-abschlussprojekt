@@ -18,6 +18,10 @@
 sudo apt install texlive-full pandoc -y
 ```
 
+## Für mermaid
+1. Install [brew](https://brew.sh)
+2. `brew install --build-from-source mermaid-cli`
+
 ## Befehl zum Rendern des PDFs
 
 <!-- wird nicht automatisch umgebrochen -->
@@ -26,11 +30,15 @@ convert.sh <Datei_zum Rendern.md>
 ```
 
 
-# Beispiele Markdown
+# Beispiele Markdown{.unlisted .unnumbered}
+
+**Überschrift wird nicht im ToC mit aufgezählt**
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+nostrud exer\-citation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+`\-` ist der Silbentrenner.
 
 ![Lokal eingebundenes Bild mit fester Breite](img/a.jpg){ width=50% }
 
