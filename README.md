@@ -15,7 +15,7 @@
 ## Installation
 
 ```bash
-sudo apt install texlive-full pandoc -y
+sudo apt install texlive-full pandoc pandoc-citeproc -y
 ```
 
 ## Für mermaid
@@ -29,6 +29,11 @@ sudo apt install texlive-full pandoc -y
 convert.sh <Datei_zum Rendern.md>
 ```
 
+
+&nbsp; Umbruch
+
+## Fußnoten
+https://de.wikipedia.org/wiki/BibTeX + wie anzuwenden
 
 # Beispiele Markdown{.unlisted .unnumbered}
 
